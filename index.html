@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Air Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="hud">
+        <div>❤️ Health: <span id="health">100</span></div>
+        <div>🏆 Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="menu">
+        <h1>✈️ 3D AIR BATTLE</h1>
+        <p>Enemy planes ko target karo!</p>
+        <button id="startBtn">START GAME</button>
+        <p class="controls">
+            W A S D / Arrow Keys = Move<br>
+            SPACE = Fire
+        </p>
+    </div>
+
+    <div id="gameOver" class="hidden">
+        <h1>GAME OVER</h1>
+        <p>Score: <span id="finalScore">0</span></p>
+        <button id="restartBtn">PLAY AGAIN</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+<div id="mobileControls">
+
+    <div class="moveButtons">
+        <button id="upBtn">⬆️</button>
+
+        <div>
+            <button id="leftBtn">⬅️</button>
+            <button id="downBtn">⬇️</button>
+            <button id="rightBtn">➡️</button>
+        </div>
+    </div>
+
+    <button id="fireBtn">🚀 FIRE</button>
+
+</div>
+</body>
+</html>
